@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Different types of buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header nav {
+            background: #333;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        header nav a:hover {
+            color: #ffd700;
+        }
+        .demo-image {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(45deg, #6bff9c, #4ecdc4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .danger-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: background 0.2s;
+        }
+        .danger-btn:hover {
+            background-color: #b52a37;
+        }
+        .primary-btn {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: background 0.2s;
+        }
+        .primary-btn:hover {
+            background-color: #005fa3;
+        }
+        .secondary-btn {
+            background-color: #f0f0f0;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 8px;
+            transition: background 0.2s;
+        }
+        .secondary-btn:hover {
+            background-color: #e0e0e0;
+        }
+        button {
+            margin-bottom: 8px;
+        }
+    </style>
+    <header>
+        <nav>
+            <a href="index.html">Page 1</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+            <a href="page4.html">Page 4</a>
+            <a href="page5.html">Page 5</a> 
+        </nav>
+    </header>
+</head>
+<body>
+    <h1>Different types of buttons</h1>
+    <p>This is a normal button.</p>
+    <button>Button</button>
+    <p>This button sends a message.</p>
+    <button class="primary-btn" onclick="alert('This is a message!')">Message button</button>
+    <p>This button sends an alert message (same as the message button).</p>
+    <button class="danger-btn" onclick="alert('Alert message.')">Alert button</button>
+    <p>This button opens another site (Here it will be Google.com).</p>
+    <button class="secondary-btn" onclick="window.open('https://www.google.com', '_blank')">Open Google</button>
+    <p>This button sends a message below it</p>
+    <button onclick="document.getElementById('message').innerHTML = 'This message must be below the button!'">Show Message Below</button>
+    <p id="message"></p>
+</body>
+</html>

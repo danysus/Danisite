@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header nav {
+            background: #333;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        header nav a:hover {
+            color: #ffd700;
+        }
+        .demo-image {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(45deg, #6bff9c, #4afff3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin: 20px auto;
+            font-size: 1.2em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .image-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .image-gallery img {
+            width: 90%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            background: #fff;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Page 1</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+            <a href="page4.html">Page 4</a>
+            <a href="page5.html">Page 5</a> 
+        </nav>
+    </header>
+    <h1>Images</h1>
+    <div class="demo-image">
+        Demo Image
+    </div>
+    <div class="image-gallery">
+        <img src="Image1.jpg" alt="Image 1">
+        <img src="Image2.jpg" alt="Image 2">
+        <img src="Image3.jpg" alt="Image 3">
+    </div>
+</body>
+</html>
